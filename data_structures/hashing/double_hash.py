@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-
 from hash_table import HashTable
-from number_theory.prime_numbers import next_prime, check_prime
+from number_theory.prime_numbers import check_prime, next_prime
 
 
 class DoubleHash(HashTable):
@@ -24,7 +23,7 @@ class DoubleHash(HashTable):
     def __hash_double_function(self, key, data, increment):
         return (increment * self.__hash_function_2(key, data)) % self.size_table
 
-    def _colision_resolution(self, key, data=None):
+    def _collision_resolution(self, key, data=None):
         i = 1
         new_key = self.hash_function(data)
 

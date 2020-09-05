@@ -1,11 +1,14 @@
 """
     Modular Exponential.
-    Modular exponentiation is a type of exponentiation performed over a modulus. 
-    For more explanation, please check https://en.wikipedia.org/wiki/Modular_exponentiation
+    Modular exponentiation is a type of exponentiation performed over a modulus.
+    For more explanation, please check
+    https://en.wikipedia.org/wiki/Modular_exponentiation
 """
 
 """Calculate Modular Exponential."""
-def modular_exponential(base : int, power : int, mod : int):
+
+
+def modular_exponential(base: int, power: int, mod: int):
     """
     >>> modular_exponential(5, 0, 10)
     1
